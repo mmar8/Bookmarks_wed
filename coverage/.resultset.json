@@ -1,7 +1,25 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/soroushkhosravi/projects/bookmarks/spec/features/viewing_bookmarks_spec.rb": [
+      "/Users/student/Makers/Week_4/Day2/bookmarks/spec/features/add_bookmark_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        1,
+        null,
+        1,
+        1,
+        1,
+        null,
+        1,
+        1,
+        0,
+        0,
+        null,
+        null
+      ],
+      "/Users/student/Makers/Week_4/Day2/bookmarks/spec/features/viewing_bookmarks_spec.rb": [
         null,
         1,
         null,
@@ -22,7 +40,7 @@
         null,
         null
       ],
-      "/Users/soroushkhosravi/projects/bookmarks/spec/units/bookmark_spec.rb": [
+      "/Users/student/Makers/Week_4/Day2/bookmarks/spec/units/bookmark_spec.rb": [
         1,
         1,
         1,
@@ -44,6 +62,6 @@
         null
       ]
     },
-    "timestamp": 1551199501
+    "timestamp": 1551280196
   }
 }
