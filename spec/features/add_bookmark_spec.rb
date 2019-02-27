@@ -8,8 +8,8 @@ feature 'add bookmarks' do
     connection.exec("INSERT INTO bookmarks VALUES(2, 'http://www.destroyallsoftware.com');")
     connection.exec("INSERT INTO bookmarks VALUES(3, 'http://www.google.com');")
 
-    visit('/')
-    fill_in 'new_bookmark', with: 'http://www.yahoo.com'
+    visit('/bookmarks/new')
+    fill_in 'url', with: 'http://www.yahoo.com'
     click_button 'Submit'
     expect(page).to have_content('http://www.yahoo.com')
   end
