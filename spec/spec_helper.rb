@@ -13,17 +13,18 @@
 # it.
 #
 # See http://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
+ENV["RACK_ENV"] = "test"
+ENV["ENVIRONMENT"] = "test"
 
 require 'capybara/rspec'
 require 'simplecov'
 require 'simplecov-console'
 require "capybara"
 require "rspec"
-ENV["RACK_ENV"] = "test"
-ENV["ENVIRONMENT"] = "test"
-require_relative './setup_test_database.rb'
-require_relative "../app.rb"
-Capybara.app = BookmarkManager
+require 'setup_test_database.rb'
+require "./app.rb"
+
+
 SimpleCov.formatter = SimpleCov::Formatter::MultiFormatter.new([
   SimpleCov::Formatter::Console,
   # Want a nice code coverage website? Uncomment this next line!
@@ -31,6 +32,7 @@ SimpleCov.formatter = SimpleCov::Formatter::MultiFormatter.new([
 ])
 SimpleCov.start
 
+Capybara.app = BookmarkManager
 
 
 RSpec.configure do |config|
