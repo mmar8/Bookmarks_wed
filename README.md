@@ -24,4 +24,4 @@ $: psql
 
 =# \c book_manager
 
-book_manager=# CREATE TABLE "bookmarks" ("id" SERIAL PRIMARY KEY, "url" VARCHAR(60));
+book_manager=# CREATE TABLE "bookmarks" ("id" SERIAL PRIMARY KEY, "url" VARCHAR(60));# WED_bookmarks
